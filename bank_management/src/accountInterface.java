@@ -9,8 +9,7 @@ public interface accountInterface {
     public String getAccountType();
 
     //setters for bms
-    public void deposit(double amount);
-    public void withdraw(double amount);
-    public void updateName(String newName);
+    public void deposit(double amount) throws NegativeBalanceException;
+    public void withdraw(double amount) throws NegativeBalanceException, InsufficientFundsException;
 }
 
