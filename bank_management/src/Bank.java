@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 class Bank {
-    private List<Account> accounts;
+    private static List<Account> accounts;
 
     public Bank() {
         accounts = new ArrayList<>();
@@ -75,7 +75,7 @@ class Bank {
     //3. Update Account End
 
     //7. Search Account
-    public Account searchAccount(String number) {
+    public static Account searchAccount(String number) {
         for (Account account : accounts) {
             if (account.getNumber().equals(number)) {
                 return account;
