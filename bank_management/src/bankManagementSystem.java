@@ -12,7 +12,7 @@ class BankManagementSystem {
 
     private static void bankOperations(Scanner scanner, Bank bank) {
         while (true) {
-            System.out.println("===============================================");
+            System.out.println("===================BANK=======================");
             System.out.println("\nBank Operations:");
             System.out.println("1) Create a new account");
             System.out.println("2) Display all accounts");
@@ -101,11 +101,13 @@ class BankManagementSystem {
 
     private static void atmOperations(Scanner scanner, Bank bank) {
         while (true) {
+            System.out.println("===================ATM========================");
             System.out.println("\nATM Operations:");
             System.out.println("1) View Account Details");
             System.out.println("2) Deposit into your account");
             System.out.println("3) Withdraw from your account");
             System.out.println("4) Exit");
+            System.out.println("==============================================");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
