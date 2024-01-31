@@ -62,7 +62,7 @@ public class Account implements accountInterface {
             throw new NegativeBalanceException(NEGATIVE_BALANCE_EXCEPTION);
         }
         if (amount > this.balance) {
-            throw new InsufficientFundsException(INSUFFICIENT_FUNDS_EXCEPTION);
+            throw new InsufficientFundsException(INSUFFICIENT_FUNDS_EXCEPTION+" Balance: "+ this.getBalance());
         }
         this.balance -= amount;
     }  
