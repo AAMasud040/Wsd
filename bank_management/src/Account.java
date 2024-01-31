@@ -49,6 +49,11 @@ public class Account implements accountInterface {
     public void withdraw(double amount) {
         this.balance -= amount;
     }
+
+    @Override
+    public void updateName(String newName){
+        this.name = newName;
+    }   
 }
 
 
@@ -69,3 +74,6 @@ class SalaryAccount extends Account{
         super(name, number, balance, "Salary Account");
     }
 }
+
+
+// ExceptionHandle Negative Balance, Withdrawl Amount, Creation 

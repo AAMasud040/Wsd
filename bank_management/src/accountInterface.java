@@ -7,8 +7,10 @@ public interface accountInterface {
     public Date getCreationDate();
     public double getBalance();
     public String getAccountType();
+
     //setters for bms
     public void deposit(double amount);
     public void withdraw(double amount);
+    public void updateName(String newName);
 }
 
