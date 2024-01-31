@@ -1,6 +1,6 @@
 import java.util.*;
 
-public interface accInt {
+public interface accountInterface {
     //getters for bms
     public String getName();
     public String getNumber();

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Account implements accInt {
+public class Account implements accountInterface {
     private String name;
     private String number;
     private Date creationDate;
